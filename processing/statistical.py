@@ -1,9 +1,9 @@
 from gensim import corpora, models
-import pyLDAvis.gensim_models as gensimvis
-import os
+# import pyLDAvis.gensim_models as gensimvis
+
 import logging
-from config.settings import Settings
-import pyLDAvis
+# from config.settings import Settings
+
 
 logger = logging.getLogger(__name__)
 
