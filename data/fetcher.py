@@ -4,17 +4,26 @@ from config.settings import Settings
 import logging
 import json
 import random
+import feedparser
 
 logger = logging.getLogger(__name__)
 analyzed_articles = (
     set()
 )  # Tracked analyzed articles in in-memory-set for testing, should be in db table
 
+### Dev mode feeds ###
+feed_urls = [
+    "datafloq.com/feed",
+    "https://feeds.bbci.co.uk/news/rss.xml",
+    "https://abcnews.go.com/abcnews/internationalheadlines",
+]
+
 
 def fetch_new_articles():
     if Settings.DEV_MODE:
         logger.info("Continuing in dev mode")
-        return _load_mock_articles()
+        # return _load_mock_articles()
+        return _combine_multiple_rss_feeds(feed_urls)
     else:
         return _fetch_from_db()
 
@@ -27,6 +36,25 @@ def _load_mock_articles():
     except Exception as e:
         logger.error(f"Failed to load mock articles: {e}")
         return pd.DataFrame()
+
+
+def _combine_multiple_rss_feeds(feed_urls):
+    dfs = []
+    for url in feed_urls:
+        try:
+            feed = feedparser.parse(url)
+            entries = feed.entries
+            df = pd.DataFrame(entries)
+            # rename main body to ensure compatability with FreshRSS format
+            if "description" in df.columns:
+                df = df.rename(columns={"description": "article_content"})
+            elif "summary" in df.columns:
+                df = df.rename(columns={"summary": "article_content"})
+            dfs.append(df)
+        except Exception as e:
+            print(f"Failed to fetch {url}: {e}")
+    combined_df = pd.concat(dfs, ignore_index=True)
+    return combined_df
 
 
 def _fetch_from_db():
