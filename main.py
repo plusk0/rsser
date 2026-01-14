@@ -26,6 +26,7 @@ def main():
                     lda, corpus, dictionary = analyze_lda(texts)
                     if lda:
                         visualize_lda(lda, corpus, dictionary)
+                        logger.info("Visualizer Done!")
                         for idx, row in df.iterrows():
                             article_text = row["article_content"]
                             # Statistical summary (e.g., first sentence or LexRank)
@@ -53,6 +54,7 @@ def main():
                 # Optional: Process backlog or older articles with transformer
         except Exception as e:
             logger.error(f"Main loop error: {e}")
+        logger.info("Loop done! Check output for visual representation")
         time.sleep(60)
 
 
