@@ -10,8 +10,9 @@ COPY environment.yml .
 
 RUN conda env create -f environment.yml && \
   conda clean -afy && \
-  conda init && \
-  conda activate rssenv
+  conda init
+
+RUN conda activate rssenv
 
 
 COPY . .
