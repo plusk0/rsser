@@ -14,9 +14,6 @@ TODO:
 ![Stars](https://img.shields.io/github/stars/plusk0/rsser?style=social)
 ![Forks](https://img.shields.io/github/forks/plusk0/rsser?style=social)
 
-![example-preview-image](/preview_example.png)
-_A sneak peek at rsser's potential analysis output._
-
 ## ✨ Features
 
 *   **🔍 RSS Analysis:** Extract valuable insights from your RSS feeds, identifying trends, popular topics, and content patterns.
