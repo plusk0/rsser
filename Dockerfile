@@ -15,7 +15,7 @@ RUN conda env create -f environment.yml && \
 COPY . .
 
 # Make RUN commands use the new environment
-SHELL ["conda", "run", "-n", "myenv", "/bin/bash", "-c"]
+SHELL ["conda", "run", "-n", "rssenv", "/bin/bash", "-c"]
 
 
 CMD ["python", "main.py"]
