@@ -1,0 +1,255 @@
+{
+  "status": "ok",
+  "feed": {
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "title": "NYT &gt; World News",
+    "link": "https://www.nytimes.com/section/world",
+    "author": "",
+    "description": "",
+    "image": "https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png"
+  },
+  "items": [
+    {
+      "title": "As Iran’s Government Tries to Quell Protests, Accounts of Brutal Crackdown Emerge",
+      "pubDate": "2026-01-14 03:31:10",
+      "link": "https://www.nytimes.com/2026/01/13/world/middleeast/iran-protester-deaths.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/middleeast/iran-protester-deaths.html",
+      "author": "Erika Solomon, Farnaz Fassihi, Sanam Mahoozi and Sanjana Varghese",
+      "thumbnail": "",
+      "description": "As many as 3,000 feared dead as witnesses describe government forces firing on unarmed protesters.",
+      "content": "As many as 3,000 feared dead as witnesses describe government forces firing on unarmed protesters.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-iran-casualties-bvgt/13int-iran-casualties-bvgt-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Iran",
+        "Demonstrations, Protests and Riots",
+        "Human Rights and Human Rights Violations",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "At This Office Park, Scamming the World Was the Business",
+      "pubDate": "2026-01-13 10:00:45",
+      "link": "https://www.nytimes.com/2026/01/13/world/asia/myanmar-scam-center.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/asia/myanmar-scam-center.html",
+      "author": "Hannah Beech and Jes Aznar",
+      "thumbnail": "",
+      "description": "Times journalists got a rare look inside one of the compounds where the online fraud industry makes its billions. Inspirational slogans (“Keep going”) were just the start.",
+      "content": "Times journalists got a rare look inside one of the compounds where the online fraud industry makes its billions. Inspirational slogans (“Keep going”) were just the start.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/01/multimedia/00int-myanmar-scams-01-vpht/00int-myanmar-scams-01-vpht-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "War and Armed Conflicts",
+        "Frauds and Swindling",
+        "Organized Crime",
+        "Robberies and Thefts",
+        "Karen (Ethnic Group)",
+        "Karen National Liberation Army (Myanmar)",
+        "China",
+        "Myanmar",
+        "Thailand",
+        "Taiwan",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Greenland Would Be the Largest U.S. Land Acquisition, if Trump Got His Way",
+      "pubDate": "2026-01-13 13:53:07",
+      "link": "https://www.nytimes.com/2026/01/13/world/europe/greenland-trump-size.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/europe/greenland-trump-size.html",
+      "author": "Jeffrey Gettleman",
+      "thumbnail": "",
+      "description": "Denmark does not want to sell its territory. But for a real estate mogul turned president, the world’s largest island may be irresistible.",
+      "content": "Denmark does not want to sell its territory. But for a real estate mogul turned president, the world’s largest island may be irresistible.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13-int-greenland-01-qtgp/13-int-greenland-01-qtgp-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "United States Politics and Government",
+        "Territorial Disputes",
+        "Politics and Government",
+        "United States International Relations",
+        "Presidents and Presidency (US)",
+        "Defense and Military Forces",
+        "History (Academic Subject)",
+        "Mexican-American War (1846-48)",
+        "Rubio, Marco",
+        "Trump, Donald J",
+        "Greenland",
+        "United States",
+        "Immerwahr, Daniel",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Marine Le Pen Is Appealing a Decision to Bar Her From Office.",
+      "pubDate": "2026-01-13 17:24:23",
+      "link": "https://www.nytimes.com/2026/01/13/world/europe/marine-le-pen-trial-appeal-electoral-ban.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/europe/marine-le-pen-trial-appeal-electoral-ban.html",
+      "author": "Ségolène Le Stradic and Catherine Porter",
+      "thumbnail": "",
+      "description": "Ms. Le Pen, whose far-right party leads polls in France, was convicted last year of embezzlement. The outcome of her appeal, which started on Tuesday, will determine if she can run for president next year.",
+      "content": "Ms. Le Pen, whose far-right party leads polls in France, was convicted last year of embezzlement. The outcome of her appeal, which started on Tuesday, will determine if she can run for president next year.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-france-trial-01-pmgc/13int-france-trial-01-pmgc-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Le Pen, Marine",
+        "Europe",
+        "France",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Trump Urges Antigovernment Protesters in Iran to ‘Take Over’",
+      "pubDate": "2026-01-13 20:48:54",
+      "link": "https://www.nytimes.com/2026/01/13/world/middleeast/trump-iran-antigovernment-protests.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/middleeast/trump-iran-antigovernment-protests.html",
+      "author": "Abdi Latif Dahir and Leily Nikounazar",
+      "thumbnail": "",
+      "description": "“HELP IS ON ITS WAY,” President Trump said on social media. He has threatened to intervene militarily on behalf of the protesters if Iran uses lethal force.",
+      "content": "“HELP IS ON ITS WAY,” President Trump said on social media. He has threatened to intervene militarily on behalf of the protesters if Iran uses lethal force.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-iran-calls-qjph/13int-iran-calls-qjph-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Iran",
+        "Computers and the Internet",
+        "Tehran (Iran)",
+        "Human Rights and Human Rights Violations",
+        "Embargoes and Sanctions",
+        "Trump, Donald J",
+        "Politics and Government",
+        "Khamenei, Ali",
+        "Amini, Mahsa (2000-22)",
+        "Currency",
+        "Iran-Israel War (2025- )",
+        "Demonstrations, Protests and Riots",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Uganda Cuts Internet Days Before Presidential Election",
+      "pubDate": "2026-01-14 08:04:22",
+      "link": "https://www.nytimes.com/2026/01/13/world/africa/uganda-election-internet.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/africa/uganda-election-internet.html",
+      "author": "Matthew Mpoke Bigg and Musinguzi Blanshe",
+      "thumbnail": "",
+      "description": "The authorities say the decision was made to prevent the spread of misinformation as President Yoweri Museveni seeks his seventh term in office.",
+      "content": "The authorities say the decision was made to prevent the spread of misinformation as President Yoweri Museveni seeks his seventh term in office.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-uganda-internet-1-fvqb/13int-uganda-internet-1-fvqb-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Demonstrations, Protests and Riots",
+        "Politics and Government",
+        "Defense and Military Forces",
+        "Computers and the Internet",
+        "Elections",
+        "Communications and Media Blackouts",
+        "Museveni, Yoweri",
+        "Africa",
+        "Uganda",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Trump Says London Is Unsafe. Its Murder Rate Just Hit a Historic Low.",
+      "pubDate": "2026-01-13 19:41:19",
+      "link": "https://www.nytimes.com/2026/01/13/world/europe/trump-london-crime-homicide.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/europe/trump-london-crime-homicide.html",
+      "author": "Lizzie Dearden and Michael D. Shear",
+      "thumbnail": "",
+      "description": "The city’s homicide rate is lower than that of New York, Paris or Toronto, contradicting a narrative promoted by President Trump and others on the populist right.",
+      "content": "The city’s homicide rate is lower than that of New York, Paris or Toronto, contradicting a narrative promoted by President Trump and others on the populist right.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-uk-london-1-gzkp/13int-uk-london-1-gzkp-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Crime and Criminals",
+        "Police",
+        "Gun Control",
+        "United States International Relations",
+        "Scotland Yard (Metropolitan Police Service)",
+        "Khan, Sadiq",
+        "Trump, Donald J",
+        "Great Britain",
+        "England",
+        "Europe",
+        "London (England)",
+        "Murders, Attempted Murders and Homicides"
+      ]
+    },
+    {
+      "title": "How a Syrian Hiking Club Is Rediscovering the Country",
+      "pubDate": "2026-01-13 08:59:46",
+      "link": "https://www.nytimes.com/2026/01/13/world/middleeast/syria-civil-war-hikers.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/middleeast/syria-civil-war-hikers.html",
+      "author": "Raja Abdulrahim and Diego Ibarra Sanchez",
+      "thumbnail": "",
+      "description": "The nearly 14-year civil war prevented Syrians from traveling freely to many parts of their own country. After the conflict ended a year ago, a group of outdoor enthusiasts began exploring newly accessible areas, fueled by a sense of adventure and hope.",
+      "content": "The nearly 14-year civil war prevented Syrians from traveling freely to many parts of their own country. After the conflict ended a year ago, a group of outdoor enthusiasts began exploring newly accessible areas, fueled by a sense of adventure and hope.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2025/12/30/multimedia/30int-syria-hike-promo-jwvh/30int-syria-hike-promo-jwvh-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Syria",
+        "Hikes and Hiking",
+        "Travel and Vacations",
+        "Organizations, Societies and Clubs",
+        "War and Armed Conflicts",
+        "Assad, Bashar al-",
+        "Damascus (Syria)",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "Spanish Singer Julio Iglesias Accused of Sexual Assault",
+      "pubDate": "2026-01-13 20:30:04",
+      "link": "https://www.nytimes.com/2026/01/13/world/europe/julio-iglesias-accused-sexual-assault.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/europe/julio-iglesias-accused-sexual-assault.html",
+      "author": "Jason Horowitz",
+      "thumbnail": "",
+      "description": "Prosecutors said two former employees of Mr. Iglesias, a renowned Spanish singer, had accused him of abuse. His representatives did not respond to requests for comment.",
+      "content": "Prosecutors said two former employees of Mr. Iglesias, a renowned Spanish singer, had accused him of abuse. His representatives did not respond to requests for comment.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2026/01/13/multimedia/13int-Spain-Iglesias-kzlt/13int-Spain-Iglesias-kzlt-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Spain",
+        "Sex Crimes",
+        "Univision",
+        "Iglesias, Enrique",
+        "Ayuso, Isabel Diaz",
+        "internal-open-access-from-nl"
+      ]
+    },
+    {
+      "title": "China’s ‘Dr. Frankenstein’ Thinks Time Is on His Side",
+      "pubDate": "2026-01-13 23:20:05",
+      "link": "https://www.nytimes.com/2026/01/13/world/asia/china-gene-edited-scientist-he-jiankui.html",
+      "guid": "https://www.nytimes.com/2026/01/13/world/asia/china-gene-edited-scientist-he-jiankui.html",
+      "author": "Andrew Higgins",
+      "thumbnail": "",
+      "description": "He Jiankui spent three years in prison after creating gene-edited babies. Now back at work, he sees a greater opening for researchers who push boundaries.",
+      "content": "He Jiankui spent three years in prison after creating gene-edited babies. Now back at work, he sees a greater opening for researchers who push boundaries.",
+      "enclosure": {
+        "link": "https://static01.nyt.com/images/2025/12/17/multimedia/00china-genetics-profile-01-ghbt/00china-genetics-profile-01-ghbt-mediumSquareAt3X.jpg"
+      },
+      "categories": [
+        "Genetic Engineering",
+        "He Jiankui",
+        "Ethics and Official Misconduct",
+        "Genetics and Heredity",
+        "Research",
+        "China",
+        "Crispr (DNA)",
+        "Reproduction (Biological)",
+        "Medicine and Health",
+        "Content Type: Personal Profile"
+      ]
+    }
+  ]
+}
