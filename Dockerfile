@@ -10,10 +10,7 @@ COPY environment.yml .
 RUN conda env create -f environment.yml
 
 # Make RUN commands use the new environment
-SHELL ["conda", "run", "-n", "your_env_name", "/bin/bash", "-c"]
-
-# Copy your script
-COPY main.py .
+SHELL ["conda", "run", "-n", "rssenv", "/bin/bash", "-c"]
 
 # Stage 2: Runtime environment
 FROM continuumio/miniconda3:latest
@@ -21,13 +18,13 @@ FROM continuumio/miniconda3:latest
 WORKDIR /app
 
 # Copy the Conda environment from the builder
-COPY --from=builder /opt/conda/envs/your_env_name /opt/conda/envs/your_env_name
+COPY --from=builder /opt/conda/envs/rssenv /opt/conda/envs/rssenv
 
 # Copy your script
-COPY main.py .
+COPY . .
 
 # Make RUN commands use the new environment
-SHELL ["conda", "run", "-n", "your_env_name", "/bin/bash", "-c"]
+SHELL ["conda", "run", "-n", "rssenv", "/bin/bash", "-c"]
 
 # Set environment variables
 ENV PYTHONPATH=/app \
