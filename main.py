@@ -13,6 +13,15 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
+def extract_text_from_row(row):
+    text_parts = []
+    for col in row.index:
+        val = row[col]
+        if isinstance(val, str):
+            text_parts.append(val)
+    return " ".join(text_parts)
+
+
 def main():
     while True:
         try:
@@ -20,17 +29,20 @@ def main():
             df = fetch_new_articles()
             if not df.empty:
                 logger.info(f"Fetched {len(df)} new articles.")
+
                 texts = df["article_content"].apply(preprocess)
                 texts = [text for text in texts if text]
+
                 if texts:
                     lda, corpus, dictionary = analyze_lda(texts)
                     if lda:
                         visualize_lda(lda, corpus, dictionary)
+                        print(dictionary)
                         logger.info("Visualizer Done!")
                         for idx, row in df.iterrows():
-                            article_text = row["article_content"]
+                            # article_text = row["row_text"]
                             # Statistical summary (e.g., first sentence or LexRank)
-                            statistical_summary = article_text.split(".")[0]
+                            # statistical_summary = article_text.split(".")[0]
                             # Transformer summary (if in downtime or long article)
                             # if len(article_text.split()) > 500:
                             #    transformer_summary = summarize(article_text)
@@ -46,7 +58,9 @@ def main():
                             #        logger.warning(
                             #            f"Transformer summary invalid for article {row['article_id']}."
                             #        )
-                            Settings.ANALYZED_ARTICLES.add(row["article_id"])
+                            Settings.ANALYZED_ARTICLES.add(
+                                row[1]
+                            )  # Using int as key is depracated in future use
                 else:
                     logger.warning("No valid articles after preprocessing.")
             else:
