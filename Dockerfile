@@ -32,6 +32,5 @@ ENV PYTHONPATH=/app \
   PYTHONUNBUFFERED=1 \
   NLTK_DATA=/opt/nltk_data
 
-
-CMD ["python", "main.py"]
+CMD ["conda", "run", "-n", "rssenv", "python", "main.py"]
 
