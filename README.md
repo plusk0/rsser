@@ -4,10 +4,10 @@ An intelligent RSS feed analyzer powered by Python and designed for seamless int
 Focused on statistical analysis for realiability.
 
 TODO:
-[ ] Add multiple Data analysis tools
-[ ] Add multiple visualization styles
-[ ] Add frontend / "home" page for visualization management
-[ ] Implement ML - Model for summarization / questioning
+* [ ] Add multiple Data analysis tools
+* [ ] Add multiple visualization styles
+* [ ] Add frontend / "home" page for visualization management
+* [ ] Implement ML - Model for summarization / questioning
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-None-lightgrey)
