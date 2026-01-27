@@ -2,20 +2,23 @@ import pandas as pd
 from sqlalchemy import create_engine
 from config.settings import Settings
 import logging
-import json
+
+# import json
 import random
 import feedparser
+import morss
 
 logger = logging.getLogger(__name__)
 analyzed_articles = (
     set()
-)  # Tracked analyzed articles in in-memory-set for testing, should be in db table
+)  # Tracked analyzed articles in in-memory-set for testing, will be in db table
 
 ### Dev mode feeds ###
 feed_urls = [
-    "datafloq.com/feed",
     "https://feeds.bbci.co.uk/news/rss.xml",
     "https://abcnews.go.com/abcnews/internationalheadlines",
+    "aljazeera.com/xml/rss/all.xml",
+    "france24.com/en/rss",
 ]
 
 
@@ -28,29 +31,34 @@ def fetch_new_articles():
         return _fetch_from_db()
 
 
-def _load_mock_articles():
-    try:
-        with open("./testing/mock_articles.json", "r") as f:
-            data = json.load(f)
-        return pd.DataFrame(_adapt_rss_items(data["items"]))
-    except Exception as e:
-        logger.error(f"Failed to load mock articles: {e}")
-        return pd.DataFrame()
-
-
+# Start of freshRSS implementation code
+# TODO: Filter interesting articles by summary/tags, then fetch full text via morss
 def _combine_multiple_rss_feeds(feed_urls):
     dfs = []
+    logger.info(f"No of urls:{len(feed_urls)}")
     for url in feed_urls:
         try:
-            feed = feedparser.parse(url)
-            entries = feed.entries
-            df = pd.DataFrame(entries)
-            # rename main body to ensure compatability with FreshRSS format
-            if "description" in df.columns:
-                df = df.rename(columns={"description": "article_content"})
-            elif "summary" in df.columns:
-                df = df.rename(columns={"summary": "article_content"})
-            dfs.append(df)
+            options = morss.Options(
+                format="rss",
+                indent=True,
+                CACHE="diskcache",
+                MAX_ITEM=-1,
+                LIM_ITEM=-1,
+                DEBUG=1,
+                MAX_TIME=10,
+                LIM_TIME=-1,
+            )
+            url, rss = morss.FeedFetch(url, options)  # this only grabs the RSS feed
+            rss = morss.FeedGather(
+                rss, url, options
+            )  # this fills the feed and cleans it up
+            output = morss.FeedFormat(rss, options, "unicode")
+
+            # logger.info(output)
+            with open("testxml.xml", "w") as f:
+                f.write(output)
+            feed = feedparser.parse(output)
+            dfs.append(pd.DataFrame(feed.entries))
         except Exception as e:
             print(f"Failed to fetch {url}: {e}")
     combined_df = pd.concat(dfs, ignore_index=True)
@@ -68,29 +76,30 @@ def _fetch_from_db():
 
 
 def _build_query():
-    query = f"""
-            SELECT
-                e.id AS article_id,
-                e.title AS article_title,
-                e.content AS article_content,
-                e.link AS article_link,
-                e.date AS article_date,
-                f.name AS feed_name,
-                c.name AS category_name
-            FROM
-                plusko_entry e
-            JOIN
-                plusko_feed f ON e.id_feed = f.id
-            LEFT JOIN
-                plusko_category c ON f.category = c.id
-            WHERE
-                e.date > EXTRACT(EPOCH FROM NOW() - INTERVAL '7 days')
-                AND e.id NOT IN ({",".join(str(id) for id in analyzed_articles)})
-            ORDER BY
-                e.date DESC;
-            """
+    if analyzed_articles:
+        query = f"""
+                SELECT
+                    e.id AS article_id,
+                    e.title AS article_title,
+                    e.content AS article_content,
+                    e.link AS article_link,
+                    e.date AS article_date,
+                    f.name AS feed_name,
+                    c.name AS category_name
+                FROM
+                    plusko_entry e
+                JOIN
+                    plusko_feed f ON e.id_feed = f.id
+                LEFT JOIN
+                    plusko_category c ON f.category = c.id
+                WHERE
+                    e.date > EXTRACT(EPOCH FROM NOW() - INTERVAL '7 days')
+                    AND e.id NOT IN ({",".join(str(id) for id in analyzed_articles)})
+                ORDER BY
+                    e.date DESC;
+                """
     # If no articles have been analyzed yet, remove the NOT IN clause
-    if not analyzed_articles:
+    else:
         query = """
         SELECT
             e.id AS article_id,
@@ -112,30 +121,3 @@ def _build_query():
             e.date DESC;
         """
     return query
-
-
-def _adapt_rss_items(items):
-    adapted_items = []
-    for item in items:
-        # Flatten the enclosure object
-        enclosure_link = item.get("enclosure", {}).get("link", "")
-
-        # Convert categories list to a string
-        categories_str = ", ".join(item.get("categories", []))
-
-        # Create a new dictionary with flattened fields
-        adapted_item = {
-            "article_id": random.randint(1, 999999),
-            "article_title": item.get("title", ""),
-            "article_date": item.get("pubDate", ""),
-            "article_link": item.get("link", ""),
-            "guid": item.get("guid", ""),
-            "author": item.get("author", ""),
-            "thumbnail": item.get("thumbnail", ""),
-            "description": item.get("description", ""),
-            "article_content": item.get("content", ""),
-            "enclosure_link": enclosure_link,
-            "category_name": categories_str,
-        }
-        adapted_items.append(adapted_item)
-    return adapted_items

@@ -1,77 +1,85 @@
 import logging
 import time
+import nltk
 from data.fetcher import fetch_new_articles
-from processing.preprocessor import preprocess
-from processing.statistical import analyze_lda
+from processing.preprocessor import (
+    preprocess_for_lda,
+    preprocess_for_textrank,
+    preprocess_text,
+)
+from processing.statistical import analyze_lda, summarize_text
+import pandas as pd
 
 # from processing.transformer import summarize
 # from processing.validator import validate_summary
 from visualization.summary_vis import visualize_lda
 from config.settings import Settings
 
-logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def extract_text_from_row(row):
-    text_parts = []
-    for col in row.index:
-        val = row[col]
-        if isinstance(val, str):
-            text_parts.append(val)
-    return " ".join(text_parts)
-
-
 def main():
+    summaries = []
+    pd.set_option(
+        "display.max_rows", None
+    )  # Show all/more rows for debugging/logging df in console
+    pd.set_option("display.max_columns", None)
+    logger.info("Starting rsser...")
     while True:
         try:
             logger.info("Trying to find articles")
             df = fetch_new_articles()
             if not df.empty:
                 logger.info(f"Fetched {len(df)} new articles.")
+                df["text"] = df["content"].apply(
+                    lambda x: x[0]["value"]
+                    if isinstance(x, list) and len(x) > 0 and "value" in x[0]
+                    else ""
+                )
+                df["text"] = df["text"].fillna(df["summary"])
+                # Extract text from df with fallback to summary
 
-                texts = df["article_content"].apply(preprocess)
-                texts = [text for text in texts if text]
+                data = df["text"].to_list()
+                texts = data.copy()
+                if data:
+                    lda_data = [preprocess_for_lda(text) for text in data]
+                    lda_data = [text for text in lda_data if text]
 
+                    if lda_data:
+                        lda, corpus, dictionary = analyze_lda(lda_data)
+                        if lda:
+                            visualize_lda(lda, corpus, dictionary)
+                            logger.info("Visualizer Done!")
                 if texts:
-                    lda, corpus, dictionary = analyze_lda(texts)
-                    if lda:
-                        visualize_lda(lda, corpus, dictionary)
-                        print(dictionary)
-                        logger.info("Visualizer Done!")
+                    ### Statistical summary via TextRank ###
+                    for text in texts:
+                        sentences = preprocess_for_textrank(text)
+                        if sentences:
+                            summaries.append(
+                                summarize_text(sentences)
+                            )  ### TODO: Meta-summary ?
+
                         for idx, row in df.iterrows():
-                            # article_text = row["row_text"]
-                            # Statistical summary (e.g., first sentence or LexRank)
-                            # statistical_summary = article_text.split(".")[0]
-                            # Transformer summary (if in downtime or long article)
-                            # if len(article_text.split()) > 500:
-                            #    transformer_summary = summarize(article_text)
-                            #    if transformer_summary and validate_summary(
-                            #        article_text, transformer_summary
-                            #    ):
-                            #        compare_summaries(
-                            #            article_text,
-                            #            statistical_summary,
-                            #            transformer_summary,
-                            #        )
-                            #    else:
-                            #        logger.warning(
-                            #            f"Transformer summary invalid for article {row['article_id']}."
-                            #        )
+                            # TODO: implement Transformer analysis
                             Settings.ANALYZED_ARTICLES.add(
                                 row[1]
-                            )  # Using int as key is depracated in future use
+                            )  # Using int as key is depracated for future use
                 else:
                     logger.warning("No valid articles after preprocessing.")
             else:
                 logger.info("No new articles. Running transformer on backlog...")
-                # Optional: Process backlog or older articles with transformer
+                # TODO: Process backlog or older articles with transformer
         except Exception as e:
             logger.error(f"Main loop error: {e}")
         logger.info("Loop done! Check output for visual representation")
+        logger.info("Summaries:")
+        output = "\r"
+        for summary in summaries:
+            output += f"{summary}\n----------\n"
+        print(output)
         time.sleep(60)
 
 
 if __name__ == "__main__":
-    logger.info("hi")
     main()

@@ -4,9 +4,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+class user_settings:
+    summary_len = 100
+
+
 class Settings:
     DEV_MODE = "true"  # os.getenv("DEV_MODE", "false").lower() == "true"
     DB_URI = f"postgresql://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}:{os.getenv('POSTGRES_PORT')}/{os.getenv('POSTGRES_DB')}"
     OUTPUT_DIR = "output"
     LOG_LEVEL = "INFO"
-    ANALYZED_ARTICLES = set()  # Track analyzed articles in memory
+    ANALYZED_ARTICLES = (
+        set()
+    )  # Track analyzed articles in memory for now, will be DB-entry
+    user_settings = user_settings
