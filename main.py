@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 
 def main():
-    summaries = []
+    summaries = {}
     pd.set_option(
         "display.max_rows", None
     )  # Show all/more rows for debugging/logging df in console
@@ -56,14 +56,13 @@ def main():
                     for text in texts:
                         sentences = preprocess_for_textrank(text)
                         if sentences:
-                            summaries.append(
-                                summarize_text(sentences)
-                            )  ### TODO: Meta-summary ?
+                            summaries[summarize_text(sentences)] = 1
+                        ### TODO: Meta-summary ?
 
                         for idx, row in df.iterrows():
                             # TODO: implement Transformer analysis
                             Settings.ANALYZED_ARTICLES.add(
-                                row[1]
+                                row.iloc[1]
                             )  # Using int as key is depracated for future use
                 else:
                     logger.warning("No valid articles after preprocessing.")
