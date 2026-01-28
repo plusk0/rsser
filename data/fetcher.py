@@ -1,9 +1,13 @@
+from newspaper.utils import memoize_articles
 import pandas as pd
 from sqlalchemy import create_engine
 from config.settings import Settings
 import logging
 import feedparser
-import morss
+import time
+import random
+import newspaper
+from newspaper import Article, Config
 
 logger = logging.getLogger(__name__)
 analyzed_articles = (
@@ -12,54 +16,66 @@ analyzed_articles = (
 
 ### Dev mode feeds ###
 feed_urls = [
-    # "https://feeds.bbci.co.uk/news/rss.xml",
-    # "https://abcnews.go.com/abcnews/internationalheadlines",  # doesnt seem to work with morss
-    "aljazeera.com/xml/rss/all.xml",
-    # "france24.com/en/rss",
+    # "http://bbci.co.uk",
+    # "http://abcnews.go.com",  # doesnt seem to work with morss
+    # "http://aljazeera.com/",
+    # "http://www.france24.com",
+    # "http://www.derstandard.at/",
+    # "http://www.france24.com/en/",
+    "http://cnn.com",
 ]
 
 
 def fetch_new_articles():
     if Settings.DEV_MODE:
         logger.info("Continuing in dev mode")
-        # return _load_mock_articles()
-        return _combine_multiple_rss_feeds(feed_urls)
+        return _fetch_articles(feed_urls)
     else:
         return _fetch_from_db()
 
 
 # Start of freshRSS implementation code
-# TODO: Filter interesting articles by summary/tags, then fetch full text via morss
-def _combine_multiple_rss_feeds(feed_urls):
-    dfs = []
-    print(f"No of urls:{len(feed_urls)}")
-    for url in feed_urls:
-        try:
-            options = morss.Options(
-                indent=True,
-                FORCE=True,  # Disable caching and force refetch
-                MAX_ITEM=100,  # Increase the number of articles fetched
-                RESOLVE=True,  # Replace tracking links with direct links
-                CLIP=True,  # Ensure full-text extraction
-                # MODE="html",  # Use HTML parsing mode
-                FIRSTLINK=True,  # Pull the first article link
-                DEBUG=1,  # Enable debugging
-            )
-            url, rss = morss.FeedFetch(url, options)  # this only grabs the RSS feed
-            rss = morss.FeedGather(
-                rss, url, options
-            )  # this fills the feed and cleans it up
-            output = morss.FeedFormat(rss, options, "unicode")
+# UPDATE: due to differences in performance/features, morss was switched out for newspaper3k
+# Where morss was using dataframes via feedparser, here we use newspaper3k structure plus preprocessing
+# License is APACHE2 due to high python-goose code use
+# TODO: Filter interesting articles by summary/tags before nlp
+def _fetch_articles(source_urls):
+    """
+    Takes a list/set of URLs
+    Returns a dict of cleaned Article Title:Text entries (for testing, will use article object later)
+    """
+    user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/573.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+    config = newspaper.Config()
+    config.browser_user_agent = user_agent
+    config.request_timeout = 10
 
-            # logger.info(output)
-            with open("testxml.xml", "w") as f:
-                f.write(output)
-            feed = feedparser.parse(output)
-            dfs.append(pd.DataFrame(feed.entries))
+    articles = dict()
+
+    for url in source_urls:
+        try:
+            source = newspaper.build(url, config=config, memoize_articles=False)
+            logger.info(f"Processing source: {url}")
+            articlenr = 0
+            for article in source.articles:
+                if articlenr > 5:
+                    print("Exceeded 5 articles per source")  # for testing only
+                    break
+                try:
+                    article.download()
+                    time.sleep(
+                        0.1 + random.random() / 5
+                    )  # Random delay between 0.1 and 0.3 seconds to limit ddos similarity and bot banning
+                    article.parse()
+                    articles[article.url] = article.text
+                    logger.info(f"Successfully fetched article: {article.url}")
+                    articlenr += 1
+                except Exception as e:
+                    logger.error(f"Failed to fetch article {article.url}: {e}")
+
         except Exception as e:
-            print(f"Failed to fetch {url}: {e}")
-    combined_df = pd.concat(dfs, ignore_index=True)
-    return combined_df
+            logger.error(f"Failed to process source {url}: {e}")
+
+    return articles
 
 
 def _fetch_from_db():

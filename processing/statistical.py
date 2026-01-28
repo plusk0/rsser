@@ -49,7 +49,7 @@ def build_graph(nodes):
     return gr
 
 
-def summarize_text(title, sentence_tokens):
+def summarize_text(sentence_tokens):
     try:
         summary_length = Settings.user_settings.summary_len
         graph = build_graph(sentence_tokens)
@@ -80,4 +80,4 @@ def summarize_text(title, sentence_tokens):
     except Exception as e:
         logger.error(f"Summarizing failed: {e}")
         summary = ""
-    return title, summary
+    return summary
