@@ -26,7 +26,7 @@ def analyze_lda(texts):
 # Graph builder for statistical summarizing
 def build_graph(nodes):
     """
-    Following implementation via Textrank by davidadamojr
+    Following implementation of Textrank by davidadamojr
     Return a networkx graph instance.
 
     :param nodes: List of hashables that represent the nodes of a graph.
@@ -40,13 +40,16 @@ def build_graph(nodes):
             firstString = pair[0]
             secondString = pair[1]
             levDistance = editdistance.eval(firstString, secondString)
-            gr.add_edge(firstString, secondString, weight=levDistance)
+            if (
+                levDistance > 90
+            ):  # Arbitary filter, only draws sentences different enough to matter
+                gr.add_edge(firstString, secondString, weight=1 / (levDistance + 1))
     except Exception as e:
         logger.error(f"Graph building failed: {e}")
     return gr
 
 
-def summarize_text(sentence_tokens):
+def summarize_text(title, sentence_tokens):
     try:
         summary_length = Settings.user_settings.summary_len
         graph = build_graph(sentence_tokens)
@@ -56,7 +59,6 @@ def summarize_text(sentence_tokens):
         sentences = sorted(
             calculated_page_rank, key=calculated_page_rank.get, reverse=True
         )
-        # return a [X] word summary
         summary = " ".join(sentences)
         summary_words = summary.split()
 
@@ -78,4 +80,4 @@ def summarize_text(sentence_tokens):
     except Exception as e:
         logger.error(f"Summarizing failed: {e}")
         summary = ""
-    return summary
+    return title, summary

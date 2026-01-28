@@ -1,473 +1,77 @@
 <?xml-stylesheet type="text/xsl" href="/sheet.xsl"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
   <channel>
+    <atom:link href="https://www.aljazeera.com/xml/rss/all.xml" rel="self" type="application/rss+xml"/>
+    <title>Al Jazeera – Breaking News, World News and Video from Al Jazeera</title>
+    <link>https://www.aljazeera.com</link>
+    <managingEditor>apps.support@aljazeera.net (Apps Support)</managingEditor>
+    <webMaster>apps.support@aljazeera.net (Apps Support)</webMaster>
+    <description>Breaking News, World News and Video from Al Jazeera</description>
+    <copyright>© 2026 Al Jazeera Media Network</copyright>
+    <lastBuildDate>Wed, 28 Jan 2026 10:35:44 +0000</lastBuildDate>
     <language>en</language>
-    <title>France 24 - International breaking news, top stories and headlines</title>
-    <description>Breaking news and world news from France 24 on Business, Sports, Culture. Video news. News from the US, Europe, Asia Pacific, Africa, Middle East, America</description>
-    <link>https://www.france24.com/en/</link>
-    <lastBuildDate>Tue, 27 Jan 2026 14:49:44 GMT</lastBuildDate>
-    <atom:link href="https://www.france24.com/en/rss" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://www.aljazeera.com/images/logo_aje.png</url>
+      <title>Al Jazeera – Breaking News, World News and Video from Al Jazeera</title>
+      <link>https://www.aljazeera.com</link>
+      <description>Breaking News, World News and Video from Al Jazeera</description>
+    </image>
+    <generator>https://wordpress.org/?v=6.8.3</generator>
+    <site xmlns="com-wordpress:feed-additions:1">213497099</site>
     <item>
-      <category/>
-      <title>South Sudan conflict reignites as peace deal unravels</title>
-      <link>https://www.france24.com/en/south-sudan-conflict-reignites-as-peace-deal-unravels</link>
-      <description>
-The conflict in South Sudan seems to have flared up again. A peace agreement signed in 2018 had brought a period of relative stability, but that progress is now falling apart. Fighting has erupted in the Jonglei region, north of the capital, and the army has deployed troops to prevent rebel forces from advancing further toward Juba. Our regional correspondent Bastien Renouil has the details.
-</description>
-      <media:thumbnail url="https://s.france24.com/media/display/77fbb404-fb8b-11f0-9f94-005056bfb2b6/w:1024/p:16x9/EN-20260126-215237-215439-CS.jpg"/>
-      <enclosure url="https://s.france24.com/media/display/77fbb404-fb8b-11f0-9f94-005056bfb2b6/w:1024/p:16x9/EN-20260126-215237-215439-CS.jpg" type="image/jpeg" length="0"/>
-      <guid isPermaLink="false">80198d8c-fb8b-11f0-a5b6-656742b0a4a5</guid>
-      <pubDate>Tue, 27 Jan 2026 14:48:36 GMT</pubDate>
-      <dc:creator>FRANCE24</dc:creator>
+      <link>https://www.aljazeera.com/economy/2026/1/28/tech-giant-asml-announces-record-orders-in-boost-for-ai-boom?traffic_source=rss</link>
+      <title>Tech giant ASML announces record orders in boost for AI boom</title>
+      <description>Dutch firm says it expects strong growth in 2026, countering fears of an investment bubble.</description>
+      <pubDate>Wed, 28 Jan 2026 10:35:44 +0000</pubDate>
+      <category>Economy</category>
+      <guid isPermaLink="false">https://www.aljazeera.com/?t=1769584956</guid>
+      <post-id xmlns="com-wordpress:feed-additions:1">4270605</post-id>
+      <content:encoded>&lt;main id="main-content-area" tabindex="-1" aria-label="Main content area" morss_own_score="4.985422740524782" morss_score="13.59531285041489"&gt;&lt;h1&gt;Tech giant ASML announces record orders in boost for AI boom&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Dutch firm says it expects strong growth in 2026, countering fears of an investment bubble.&lt;/em&gt;&lt;/p&gt;&lt;figure class="article-featured-image" morss_own_score="9.0" morss_score="12.0"&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP25191490494064-1769585394.jpg?resize=770%2C513&amp;amp;quality=80"&gt;&lt;figcaption&gt;The logo of ASML, a leading maker of semiconductor production equipment, hangs on the head office in Veldhoven, Netherlands, on January 30, 2023 [File: Peter Dejong/AP]&lt;/figcaption&gt;&lt;/figure&gt;&lt;a href="https://www.aljazeera.com/author/powerj"&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2020/09/jp-1730786685-rotated.jpg?resize=96%2C96&amp;amp;quality=80"&gt;&lt;/a&gt;&lt;span&gt;By &lt;/span&gt;&lt;a href="https://www.aljazeera.com/author/powerj"&gt;John Power&lt;/a&gt;&lt;span&gt;Published On 28 Jan 2026&lt;/span&gt;&lt;span&gt;28 Jan 2026&lt;/span&gt;&lt;p&gt;Save&lt;/p&gt;&lt;div class="wysiwyg wysiwyg--all-content" aria-live="polite" aria-atomic="true" morss_own_score="5.076923076923077" morss_score="74.07692307692308"&gt;&lt;p&gt;Tech giant ASML has reported a quarterly record in orders of its chip-making equipment, boosting hopes for the sustainability of the artificial intelligence boom and countering fears of an investment bubble.&lt;/p&gt;&lt;p&gt;The Dutch firm said on Wednesday that it booked orders worth 13.2 billion euros ($15.8bn) in the final quarter of 2025, more than half of which were for its most advanced extreme ultraviolet (EUV) lithography machines.&lt;/p&gt;&lt;h2&gt;Recommended Stories &lt;/h2&gt;&lt;span&gt;list of 4 items&lt;/span&gt;&lt;span&gt;end of list&lt;/span&gt;&lt;p&gt;ASML logged orders worth 7 million euros during the same period the previous year.&lt;/p&gt;&lt;p&gt;Net sales came to 9.7 billion euros in the October-December period, ASML said, taking sales for all of 2025 to 32.7 billion euros.&lt;/p&gt;&lt;p&gt;Net profit for the year was 9.6 billion euros, up from 7.6 billion euros in 2024.&lt;/p&gt;&lt;p&gt;The Veldhoven-based company forecast net sales of between 34 billion euros and 39 billion euros in 2026.&lt;/p&gt;&lt;p&gt;ASML Chief Executive Officer Christophe Fouquet said the company’s chip-making customers had conveyed a “notably more positive assessment” of the market situation in the medium term based on expectations of strong AI-related demand.&lt;/p&gt;&lt;p&gt;“This is reflected in a marked step-up in their medium-term capacity plans and in our record order intake,” Fouquet said in a statement.&lt;/p&gt;&lt;p&gt;“Therefore, we expect 2026 to be another growth year for ASML’s business, largely driven by a significant increase in EUV sales and growth in our installed base business sales.”&lt;/p&gt;&lt;p&gt;Fouquet also said the company would cut about 1,700 jobs, most of them at the leadership level, amid concerns work processes had become “less agile”.&lt;/p&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;p&gt;“Engineers in particular have expressed their desire to focus their time on engineering, without being hampered by slow process flows, and restore the fast-moving culture that has made us so successful,” Fouquet said.&lt;/p&gt;&lt;p&gt;The proposed cuts, which would affect positions in the Netherlands and the United States, represent about 4 percent of ASML’s 44,000-strong global workforce.&lt;/p&gt;&lt;p&gt;ASML holds an effective monopoly on the production of machinery used by TSMC, Samsung Electronics, and Intel to make the most advanced AI chips.&lt;/p&gt;&lt;p&gt;The company sells only about 50 of its extreme ultraviolet (EUV) lithography machines each year, with each unit costing about 250 million euros.&lt;/p&gt;&lt;p&gt;ASML’s share price surged on Wednesday, with its stock up nearly 6 percent as of 9.30am local time.&lt;/p&gt;&lt;p&gt;“ASML’s latest results suggest the AI boom is still in full swing, with strong orders and a bullish outlook,” said Russ Mould, investment director at AJ Bell.&lt;/p&gt;&lt;p&gt;“However, job cuts in the business would suggest it is not getting carried away with the strength of current trading.”&lt;/p&gt;&lt;p&gt;ASML’s restructuring “looks like a sharper focus on efficiencies and different ways of working, rather than saying there isn’t enough work for existing staff to do,” Mould added.&lt;/p&gt;&lt;p&gt;“Nonetheless, it’s a sign that the AI craze might be trying to catch its breath.”&lt;/p&gt;&lt;p&gt;Tech giants such as Meta, OpenAI, Nvidia and Oracle have poured billions of dollars into AI in the expectation that the technology will deliver dramatic changes to how people work and live.&lt;/p&gt;&lt;p&gt;Global AI-related spending is forecast to hit $2.53 trillion in 2026 and $3.33 trillion in 2027, according to projections by technology insights firm Gartner.&lt;/p&gt;&lt;p&gt;The investment boom has propelled the US stock market to record highs, stoking concerns about the sustainability of huge spending on a technology whose promise remains largely unrealised.&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;</content:encoded>
     </item>
     <item>
-      <category/>
-      <title>Uganda: Tensions remain high on opposition after disrupted elections</title>
-      <link>https://www.france24.com/en/uganda-tensions-remain-high-on-opposition-after-disrupted-elections</link>
-      <description>
-Uganda remains in the grip of severe political tensions following the recent election, with reports of around 800 arrests nationwide. Security forces have also been accused of killing people and carrying out abductions. The opposition leader has condemned the government’s actions, accusing the authorities of spreading fear to silence dissent. Juliette Montilly reports.
-</description>
-      <media:thumbnail url="https://s.france24.com/media/display/e726aa7e-fb8a-11f0-ba7b-005056a90284/w:1024/p:16x9/EN-20260126-214958-215212-CS.jpg"/>
-      <enclosure url="https://s.france24.com/media/display/e726aa7e-fb8a-11f0-ba7b-005056a90284/w:1024/p:16x9/EN-20260126-214958-215212-CS.jpg" type="image/jpeg" length="0"/>
-      <guid isPermaLink="false">eb9cc6e2-fb8a-11f0-a310-713090534b8b</guid>
-      <pubDate>Tue, 27 Jan 2026 14:46:17 GMT</pubDate>
-      <dc:creator>FRANCE24</dc:creator>
-      <ns0:encoded xmlns:ns0="http://purl.org/rss/1.0/modules/content/">&lt;body class="u-header-sticky u-header-with-tag-list" data-cmp-theme="france24" data-site-nav-state="hidden" data-share-popin-state="hidden" morss_own_score="1.8576748034753827" morss_score="2.8576748034753825"&gt;
-
-
-
-
-
-&lt;a href="https://www.france24.com/en/uganda-tensions-remain-high-on-opposition-after-disrupted-elections#main-content"&gt;Skip to main content&lt;/a&gt;
-
-&lt;nav&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href="https://www.france24.com/en/"&gt;
-
-
-
-&lt;span&gt;
-                        Home
-                            &lt;/span&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://www.france24.com/en/tv-shows/latest-shows/"&gt;
-
-
-
-&lt;span&gt;
-                        Shows
-                            &lt;/span&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://www.france24.com/en/live"&gt;
-
-
-
-&lt;span&gt;
-                        Live
-                            &lt;/span&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://www.france24.com/en/live-news/"&gt;
-
-
-
-&lt;span&gt;
-                        Newsfeed
-                            &lt;/span&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-
-
-
-
-&lt;span&gt;Menu&lt;/span&gt;
-
-
-
-
-&lt;span&gt;Menu&lt;/span&gt;
-
-
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
-
-
-
-
-
-
-
-
-&lt;p&gt;Headings&lt;/p&gt;
-&lt;div&gt;
-            Topics
-        &lt;/div&gt;
-&lt;div&gt;
-            By region
-        &lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;main role="main" data-nav-container="" morss_own_score="1.7955801104972378" morss_score="3.5911602209944755"&gt;
-&lt;div class="t-content t-content--article t-content--video" id="main-content" tabindex="-1" morss_own_score="3.5911602209944755" morss_score="8.833095704865443"&gt;
-&lt;div class="t-content__main-media" data-media-video-fd9d6566-e588-4a70-afee-8856230ce267="" data-wrapper-video-player="" data-show-hidden-video-player="FD9D6566-E588-4A70-AFEE-8856230CE267" data-autoplay-video-link="" data-youtube-script="" morss_own_score="5.0" morss_score="9.0"&gt;
-&lt;div class="o-em-consent" morss_own_score="2.0" morss_score="4.5"&gt;
-&lt;div class="o-em-consent__content" morss_own_score="5.0" morss_score="9.0"&gt;
-&lt;p class="o-em-consent__content__text" morss_own_score="8.0" morss_score="8.0"&gt;To display this content from YouTube, you must enable advertisement tracking and audience measurement.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="o-em-adblock" data-adblock-content="" morss_own_score="2.0" morss_score="4.5"&gt;
-&lt;div class="o-em-adblock__content" morss_own_score="5.0" morss_score="9.5"&gt;
-&lt;p class="o-em-adblock__content__text" morss_own_score="9.0" morss_score="9.0"&gt;One of your browser extensions seems to be blocking the video player from loading. To watch this content, you may need to disable it on this site.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-
-&lt;figure class="m-item-image m-item-image--16x9 m-item-image--has-caption" morss_own_score="4.0" morss_score="6.0"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/e726aa7e-fb8a-11f0-ba7b-005056a90284/w:1024/p:16x9/EN-20260126-214958-215212-CS.jpg"&gt;
-&lt;/source&gt;
-&lt;figcaption class="a-figcaption" morss_own_score="4.0" morss_score="4.0"&gt;
-&lt;span&gt;© France 24&lt;/span&gt; &lt;/figcaption&gt;
-
-&lt;time&gt;02:13&lt;/time&gt; 
-&lt;/figure&gt; &lt;/div&gt;
-&lt;div class="t-content__main" data-article-content="" morss_own_score="5.483870967741935" morss_score="13.163870967741936"&gt;
-&lt;h1 class="t-content__title a-page-title" morss_own_score="8.0" morss_score="8.0"&gt;Uganda: Tensions remain high on opposition after disrupted elections&lt;/h1&gt;
-
-&lt;div&gt;
-
-                                    Africa
-                            &lt;/div&gt;
-
-&lt;div class="t-content__metadata" morss_own_score="2.0" morss_score="3.5"&gt;
-&lt;div class="t-content__dates" morss_own_score="3.0" morss_score="5.0"&gt;
-&lt;p class="m-pub-dates" morss_own_score="4.0" morss_score="4.0"&gt;&lt;span&gt;Issued on: &lt;time&gt;27/01/2026 - 15:46&lt;/time&gt;&lt;/span&gt;&lt;/p&gt; &lt;/div&gt;
-
-
-
-
-
-
-
-
-&lt;/div&gt;&lt;div class="m-box-expand" data-box-expand="" morss_own_score="5.359999999999999" morss_score="8.021971830985915"&gt;
-&lt;div class="m-box-expand__content" aria-hidden="true" data-box-expand-content="" morss_own_score="5.323943661971831" morss_score="10.323943661971832"&gt;
-&lt;p class="t-content__chapo" morss_own_score="10.0" morss_score="10.0"&gt;
-                                                                Uganda remains in the grip of severe political tensions following the recent election, with reports of around 800 arrests nationwide. Security forces have also been accused of killing people and carrying out abductions. The opposition leader has condemned the government’s actions, accusing the authorities of spreading fear to silence dissent. Juliette Montilly reports.                            &lt;/p&gt;
-
-
-&lt;span&gt;
-                Video by:
-            &lt;/span&gt;
-
-
-&lt;a href="https://www.france24.com/en/author/juliette-montilly/" title="Juliette MONTILLY"&gt;
-                                Juliette MONTILLY
-                            &lt;/a&gt;
-
-
-
-
-&lt;div class="t-content__tags" morss_own_score="1.2" morss_score="2.2"&gt;
-&lt;div&gt;Keywords for this article&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href="https://www.france24.com/en/tag/uganda/" title="Uganda"&gt;    Uganda&lt;/a&gt;
-&lt;/li&gt; &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;button class="m-box-expand__button a-link" data-box-expand-button="" morss_own_score="1.0" morss_score="4.0"&gt;
-&lt;div class="m-box-expand__button__open" morss_own_score="3.0" morss_score="4.5"&gt;
-
-
-
-&lt;span class="a-hover-content" data-hover-label="Read more" morss_own_score="3.0" morss_score="3.0"&gt;Read more&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class="m-box-expand__button__close" data-box-expand-button-close="" morss_own_score="3.0" morss_score="4.5"&gt;
-
-
-
-&lt;span class="a-hover-content" data-hover-label="Read less" morss_own_score="3.0" morss_score="3.0"&gt;Read less&lt;/span&gt;&lt;/div&gt;
-&lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;a href="https://www.france24.com/en/drc-goma-marks-one-year-under-rebel-control-as-daily-life-resumes"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/561a6fe4-fb89-11f0-af38-005056bf30b7/w:720/p:16x9/EN-20260126-214603-214834-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-&lt;a href="https://www.france24.com/en/drc-goma-marks-one-year-under-rebel-control-as-daily-life-resumes"&gt;
-&lt;h2&gt;DRC: Goma marks one year under rebel control as daily life resumes&lt;/h2&gt;
-&lt;/a&gt; 
-&lt;time&gt;
-                                                27/01/2026
-                                            &lt;/time&gt;
-
-
-
-&lt;div&gt;
-
-                                    Africa
-                            &lt;/div&gt;
-
-
-
-
-
-
-&lt;a href="https://www.france24.com/en/africa-s-role-in-trump-s-uncertain-vision-of-a-new-world-order"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/128c885a-f9d3-11f0-825a-005056bf30b7/w:720/p:16x9/EN-20260125-091131-091847-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-&lt;a href="https://www.france24.com/en/africa-s-role-in-trump-s-uncertain-vision-of-a-new-world-order"&gt;
-&lt;h2&gt;Africa’s role in Trump’s uncertain vision of a New World Order&lt;/h2&gt;
-&lt;/a&gt; 
-&lt;time&gt;
-                                                25/01/2026
-                                            &lt;/time&gt;
-
-
-
-&lt;div&gt;
-
-                                    Americas
-                            &lt;/div&gt;
-
-
-
-
-
-
-&lt;a href="https://www.france24.com/en/uvira-economy-at-a-standstill-amid-conflict-between-drc-forces-and-m23-rebels"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/d84ebd22-f84a-11f0-9cd9-005056a97e36/w:720/p:16x9/EN-20260122-215142-215335-CS-01.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-
-&lt;a href="https://www.france24.com/en/former-sudanese-pm-hamdok-speaks-on-france-24"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/c2e0af42-f703-11f0-97a9-005056bf30b7/w:720/p:16x9/EN-20260121-203110-204731-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-&lt;a href="https://www.france24.com/en/former-sudanese-pm-hamdok-speaks-on-france-24"&gt;
-&lt;h2&gt;Former Sudanese PM Hamdok speaks on FRANCE 24&lt;/h2&gt;
-&lt;/a&gt; 
-&lt;time&gt;
-                                                21/01/2026
-                                            &lt;/time&gt;
-
-
-
-&lt;div&gt;
-
-                                    Africa
-                            &lt;/div&gt;
-
-
-
-
-
-
-&lt;a href="https://www.france24.com/en/china-russia-conclude-brics-naval-drills-in-south-africa-amid-controversy"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/fae9cde8-f5f4-11f0-8027-005056bfb2b6/w:720/p:16x9/EN-20260116-214617-214803-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-
-&lt;a href="https://www.france24.com/en/voting-begins-in-uganda-s-presidential-election-during-internet-shutdown"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/5119bf1a-f218-11f0-9f03-005056a90284/w:720/p:16x9/EN-20260115-132414-132616-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-&lt;a href="https://www.france24.com/en/voting-begins-in-uganda-s-presidential-election-during-internet-shutdown"&gt;
-&lt;h2&gt;Voting begins in Uganda’s presidential election during internet shutdown&lt;/h2&gt;
-&lt;/a&gt; 
-&lt;time&gt;
-                                                15/01/2026
-                                            &lt;/time&gt;
-
-
-
-&lt;div&gt;
-
-                                    Africa
-                            &lt;/div&gt;
-
-
-
-
-
-
-&lt;a href="https://www.france24.com/en/uganda-africa-s-longest-serving-leader-yoweri-museveni-seeks-to-extend-40-year-rule"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/f8fd3956-f1fe-11f0-ad40-005056bfb2b6/w:720/p:16x9/EN-20260115-084017-084225-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-
-&lt;a href="https://www.france24.com/en/uganda-votes-for-a-new-president-under-internet-blackout-and-police-crackdown"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/dd111674-f1f7-11f0-9880-005056bf30b7/w:720/p:16x9/EN-20260115-080116-080500-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-
-&lt;a href="https://www.france24.com/en/nigeria-reopens-some-schools-in-the-north-despite-kidnap-threats"&gt;
-
-&lt;source type="image/webp"&gt;
-&lt;img src="https://s.france24.com/media/display/ac54ca3a-f071-11f0-bde2-005056a97e36/w:720/p:16x9/EN-20260112-215559-215744-CS.jpg"&gt;
-&lt;/source&gt;
-
-&lt;/a&gt; 
-
-&lt;a href="https://www.france24.com/en/nigeria-reopens-some-schools-in-the-north-despite-kidnap-threats"&gt;
-&lt;h2&gt;Nigeria reopens some schools in the north despite kidnap threats&lt;/h2&gt;
-&lt;/a&gt; 
-&lt;time&gt;
-                                                13/01/2026
-                                            &lt;/time&gt;
-
-
-
-&lt;div&gt;
-
-                                    Africa
-                            &lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;/main&gt;
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;div class="a-loader-error" morss_own_score="1.0" morss_score="3.0"&gt;
-&lt;div class="a-loader-error__content" morss_own_score="4.0" morss_score="11.0"&gt;
-&lt;div class="a-loader-error__content__title" morss_own_score="3.0" morss_score="3.0"&gt;Page not found&lt;/div&gt;
-&lt;div class="a-loader-error__content__icon" morss_own_score="3.0" morss_score="4.5"&gt;
-&lt;span class="a-svg a-svg--picto-broken-page" morss_own_score="3.0" morss_score="3.0"&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;p class="a-loader-error__content__message" morss_own_score="8.0" morss_score="8.0"&gt;The content you requested does not exist or is not available anymore.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/body&gt;
-</ns0:encoded>
+      <link>https://www.aljazeera.com/news/2026/1/28/israels-attacks-on-gaza-fertility-clinics-shatter-dreams-of-parenthood?traffic_source=rss</link>
+      <title>Israel’s attacks on Gaza fertility clinics shatter dreams of parenthood</title>
+      <description>Israel&amp;#039;s war has devastated enclave&amp;#039;s reproductive health system; advocates call it a genocidal measure.</description>
+      <pubDate>Wed, 28 Jan 2026 10:30:20 +0000</pubDate>
+      <category>News</category>
+      <guid isPermaLink="false">https://www.aljazeera.com/?t=1769590551</guid>
+      <post-id xmlns="com-wordpress:feed-additions:1">4270605</post-id>
+      <content:encoded>&lt;main id="main-content-area" tabindex="-1" aria-label="Main content area" morss_own_score="4.988165680473373" morss_score="10.473776261991883"&gt;&lt;header class="article-header" morss_own_score="3.5294117647058822" morss_score="9.529411764705882"&gt;&lt;h1&gt;Israel’s attacks on Gaza fertility clinics shatter dreams of parenthood&lt;/h1&gt;&lt;p class="article__subhead" morss_own_score="7.0" morss_score="9.5"&gt;&lt;em&gt;Israel’s war has devastated the enclave’s reproductive health system; advocates call it a genocidal measure.&lt;/em&gt;&lt;/p&gt;&lt;/header&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2025/12/2025-12-22T121813Z_772755336_RC2ZIIAZ505E_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-WEATHER-1766412064.jpg?resize=730%2C410&amp;amp;quality=80"&gt;&lt;span&gt;Video Duration 02 minutes 20 seconds &lt;/span&gt;&lt;title&gt;play-arrow&lt;/title&gt;&lt;span&gt;02:20&lt;/span&gt;&lt;p&gt;Israeli strikes destroy 90% of Gaza’s fertility clinics, erasing hopes for future generations&lt;/p&gt;&lt;div&gt;&lt;span&gt;By &lt;/span&gt;Al Jazeera staff&lt;/div&gt;&lt;span&gt;Published On 28 Jan 2026&lt;/span&gt;&lt;span&gt;28 Jan 2026&lt;/span&gt;&lt;p&gt;Save&lt;/p&gt;&lt;div class="wysiwyg wysiwyg--all-content" aria-live="polite" aria-atomic="true" morss_own_score="5.05050505050505" morss_score="70.76820867041455"&gt;&lt;p morss_own_score="6.0" morss_score="8.0"&gt;&lt;strong&gt;Gaza City –&lt;/strong&gt; Maysera al-Kafarna, a Palestinian woman in Gaza, sorts through blue baby overalls brought for the child she was supposed to have.&lt;/p&gt;&lt;p&gt;But her dreams of motherhood have been dashed by Israel’s genocidal &lt;a href="https://www.aljazeera.com/news/liveblog/2026/1/28/live-rafah-crossing-reopens-as-israel-keeps-launching-deadly-attacks-on-gaza"&gt;war on Gaza&lt;/a&gt;, which ravaged the enclave’s healthcare system that saves lives, as well as the fertility centres that plan them.&lt;/p&gt;&lt;h2&gt;Recommended Stories &lt;/h2&gt;&lt;span&gt;list of 3 items&lt;/span&gt;&lt;span&gt;end of list&lt;/span&gt;&lt;p&gt;After years of trying, al-Kafarna and her husband turned &lt;a href="https://www.aljazeera.com/news/2025/3/13/israels-attacks-on-reproductive-healthcare-in-gaza-genocidal-un"&gt;to in-vitro fertilisation&lt;/a&gt; (IVF). Their embryos were frozen in a fertility centre, waiting for the war to end, but the clinic was attacked by Israel.&lt;/p&gt;&lt;p&gt;“We had four viable embryos stored there in the first months of the war. We were shocked to learn they had been destroyed when the clinic was attacked,” al-Kafarna told Al Jazeera.&lt;/p&gt;&lt;p&gt;“It was deeply painful. We felt like we had lost a part of ourselves. We were waiting for a chance to have our baby.”&lt;/p&gt;&lt;p&gt;Medical officials in Gaza say Israel has destroyed nine out of 10 fertility clinics in the territory. In addition, embryos that remain are still in danger, despite the ceasefire, due to fuel shortages and a lack of liquid nitrogen to keep them at the required temperature.&lt;/p&gt;
+
+&lt;p&gt;Rights advocates say Israel’s attacks on reproductive health in Gaza are a textbook implementation of genocidal policies, as defined by the United Nations.&lt;/p&gt;&lt;p&gt;Last year, UN investigators concluded that Israeli attacks on fertility clinics and maternity wards were part of Israel’s push to destroy the Palestinian people.&lt;/p&gt;&lt;p&gt;The 1948 UN Convention lists “imposing measures intended to prevent births within the group” as one of five acts it classified as genocidal.&lt;/p&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;p&gt;In September 2024, a &lt;a href="https://www.aljazeera.com/news/2025/9/16/first-head-of-united-nations-body-declares-israels-gaza-war-a-genocide"&gt;UN Commission of Inquiry&lt;/a&gt; found that Israel had engaged in four of the five acts during its war on Gaza, including efforts to prevent births.&lt;/p&gt;&lt;p&gt;“Attacks on healthcare facilities, including those offering sexual and reproductive healthcare and services, have affected about 545,000 women and girls who are of reproductive age in Gaza,” the UN investigators wrote in their report.&lt;/p&gt;&lt;p&gt;They specifically reviewed an Israeli attack on &lt;a href="https://www.aljazeera.com/news/2025/3/13/israels-attacks-on-reproductive-healthcare-in-gaza-genocidal-un"&gt;Al-Basma IVF clinic&lt;/a&gt; in Gaza City in December 2023 that destroyed thousands of embryos, sperm samples and other reproductive material.&lt;/p&gt;&lt;p&gt;“The commission found that the Israeli authorities knew that the medical centre was a fertility clinic and that they intended to destroy it,” the UN inquiry said.&lt;/p&gt;&lt;p&gt;“Therefore, the Commission concluded that the destruction of the Al-Basma IVF clinic was a measure intended to prevent births among Palestinians in Gaza.”&lt;/p&gt;&lt;p&gt;The Gaza Ministry of Health reported a 41 percent decrease in births in Gaza in the first half of 2025 compared with the previous three years.&lt;/p&gt;
+
+&lt;p&gt;Beyond the direct attacks on reproductive healthcare facilities, &lt;a href="https://www.aljazeera.com/news/2026/1/10/extreme-cold-kills-another-infant-in-gaza-as-israel-blocks-vital-aid"&gt;Israel’s blockade&lt;/a&gt; on medical supplies and food has further harmed newborns and birth rates.&lt;/p&gt;&lt;p&gt;“Inability to access medical care and proper nutrition harmed reproductive capacity by causing infertility, miscarriage, complications, and maternal death for women, as well as poor health outcomes for newborns,” a study by Physicians for Human Rights said.&lt;/p&gt;&lt;p&gt;Despite the dire conditions that persist, fertility doctor Abdel Nasser al-Kalhout said he hopes to resume his work as soon as conditions allow it.&lt;/p&gt;&lt;p&gt;“We hope that after the war ends, we can start again, restoring hope for people who lost their embryos and for the couples whose treatment began but couldn’t continue because of the war,” al-Kalhout told Al Jazeera.&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;</content:encoded>
     </item>
     <item>
-      <category>Focus</category>
-      <title>Restoring Mont Saint-Michel: Historic French monument in need of repair</title>
-      <link>https://www.france24.com/en/tv-shows/focus/20260127-restoring-mont-saint-michel-historic-french-monument-in-need-of-repair</link>
-      <description>
-Located in the French region of Normandy, Mont-Saint-Michel is a breathtaking site, recognised the world over. Millions of visitors come to visit this abbey that dates back to the 10th century. It has withstood storms, fires, wars and the passage of time. But today, the abbey's ancient walls are in desperate need of repair. Water has seeped into the stone, causing cracks. Green moss now covers the interior walls of the church, and statues must be restored to their former glory. Our France 2 colleagues report, with FRANCE 24's Lauren Bain.
-</description>
-      <media:thumbnail url="https://s.france24.com/media/display/338d3e02-fb8e-11f0-8f0b-005056a90284/w:1024/p:16x9/capture-18091442726978ce7d534c18-61015142.jpg"/>
-      <enclosure url="https://s.france24.com/media/display/338d3e02-fb8e-11f0-8f0b-005056a90284/w:1024/p:16x9/capture-18091442726978ce7d534c18-61015142.jpg" type="image/jpeg" length="0"/>
-      <guid isPermaLink="false">86c19428-faf4-11f0-bf12-bbac21ee6285</guid>
-      <pubDate>Tue, 27 Jan 2026 14:42:46 GMT</pubDate>
-      <dc:creator>FRANCE 2</dc:creator>
+      <link>https://www.aljazeera.com/news/2026/1/28/russia-launches-new-deadly-strikes-across-ukraine?traffic_source=rss</link>
+      <title>At least three people killed in Russian attacks on Ukraine</title>
+      <description>Russia used an Iskander-M ballistic missile and 146 drones in its attacks, according to Ukraine&amp;#039;s air force.</description>
+      <pubDate>Wed, 28 Jan 2026 10:12:49 +0000</pubDate>
+      <category>News</category>
+      <guid isPermaLink="false">https://www.aljazeera.com/?t=1769584441</guid>
+      <post-id xmlns="com-wordpress:feed-additions:1">4270605</post-id>
+      <content:encoded>&lt;main id="main-content-area" tabindex="-1" aria-label="Main content area" morss_own_score="4.839378238341969" morss_score="10.280779787570275"&gt;&lt;header class="article-header" morss_own_score="3.709677419354839" morss_score="9.70967741935484"&gt;&lt;h1&gt;At least three people killed in Russian attacks on Ukraine&lt;/h1&gt;&lt;p class="article__subhead" morss_own_score="7.0" morss_score="9.5"&gt;&lt;em&gt;Russia used an Iskander-M ballistic missile and 146 drones in its attacks, according to Ukraine’s air force.&lt;/em&gt;&lt;/p&gt;&lt;/header&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AFP__20260128__949H3WE__v1__MidRes__UkraineRussiaConflictWar-1769590468.jpg?resize=730%2C410&amp;amp;quality=80"&gt;&lt;span&gt;Video Duration 03 minutes 54 seconds &lt;/span&gt;&lt;title&gt;play-arrow&lt;/title&gt;&lt;span&gt;03:54&lt;/span&gt;&lt;p&gt;Russian drone hits Ukrainian passenger train in Kharkiv, killing at least five&lt;/p&gt;&lt;div&gt;&lt;span&gt;By &lt;/span&gt;News Agencies&lt;/div&gt;&lt;span&gt;Published On 28 Jan 2026&lt;/span&gt;&lt;span&gt;28 Jan 2026&lt;/span&gt;&lt;p&gt;Save&lt;/p&gt;&lt;div class="wysiwyg wysiwyg--all-content" aria-live="polite" aria-atomic="true" morss_own_score="4.900398406374501" morss_score="67.05948424806904"&gt;&lt;p&gt;A Russian air attack has killed two people in Kyiv region’s Bilohorodska community, and a drone attack killed another person in central Ukraine’s Dnipropetrovsk region, according to local authorities.&lt;/p&gt;&lt;p&gt;The deadly attacks came overnight on Wednesday, just hours after a &lt;a href="https://www.aljazeera.com/news/2026/1/28/russia-ukraine-war-list-of-key-events-day-1434"&gt;deadly drone attack on a commuter train&lt;/a&gt; in northeastern Ukraine’s Kharkiv – an incident denounced as “terrorism” by President Volodymyr Zelenskyy.&lt;/p&gt;&lt;h2&gt;Recommended Stories &lt;/h2&gt;&lt;span&gt;list of 3 items&lt;/span&gt;&lt;span&gt;end of list&lt;/span&gt;&lt;p class="tr-story-p1" morss_own_score="9.0" morss_score="9.0"&gt;Also on Wednesday, three people were injured in a Russian drone attack on port infrastructure in the southern region of Odesa, according to Governor Oleh Kiper.&lt;/p&gt;&lt;p class="tr-story-p1" morss_own_score="9.0" morss_score="9.0"&gt;In the capital, Kyiv, a 17-storey residential building was hit, causing minor damage to the roof and damaging windows on the upper floors, emergency services said.&lt;/p&gt;&lt;p class="tr-story-p1" morss_own_score="9.0" morss_score="9.0"&gt;Several residential buildings in Kyiv remain without power due to earlier Russian attacks on the country’s energy grid.&lt;/p&gt;&lt;p&gt;Russia attacked Ukraine overnight with an Iskander-M ballistic missile and 146 drones – 103 of them neutralised by air defences, Ukraine’s air force said.&lt;/p&gt;&lt;p&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2022/02/INTERACTIVE-WHO-CONTROLS-WHAT-IN-UKRAINE-1769008264.png?quality=80"&gt;&lt;/p&gt;&lt;p&gt;On Tuesday night, five people were confirmed dead and several others injured after a Russian drone hit a passenger train near Kharkiv city, Al Jazeera’s Audrey Macalpine said, reporting from Kyiv.&lt;/p&gt;&lt;p&gt;“This attack has struck fears among Ukrainians,” Macalpine said, noting that the train was carrying about 100 passengers.&lt;/p&gt;&lt;p&gt;“With the country’s airspace closed, people rely heavily on trains as a means of moving around the country,” she said. “And this is a culmination of weeks of threats on the security of the train system.”&lt;/p&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;p&gt;In a statement, Zelenskyy said the attack in Kharkiv &lt;a href="https://www.aljazeera.com/news/2026/1/26/ukraines-zelenskyy-says-us-security-agreement-100-ready-to-be-signed"&gt;undermined peace efforts&lt;/a&gt; and urged allies to step up pressure on Moscow to end the war.&lt;/p&gt;
+
+&lt;p&gt;“In any country, a drone strike on a civilian train would be viewed the same way – exclusively as terrorism,” Zelenskyy said on his Telegram channel.&lt;/p&gt;&lt;p&gt;“The Russians have significantly increased their ability to kill, their ability to terrorise,” he said, while rallying the international community to put more “pressure” on Moscow to halt its deadly offensive amid ongoing negotiations for a ceasefire.&lt;/p&gt;&lt;p&gt;“Russia must be held responsible for what it is doing,” Zelenskyy said.&lt;/p&gt;&lt;p&gt;The attacks that have left many Ukrainians without power in freezing winter temperatures come after Russian and Ukrainian negotiators met in the United Arab Emirates last week for &lt;a href="https://www.aljazeera.com/news/2026/1/24/us-brokered-talks-on-ukraine-close-with-no-breakthrough"&gt;United States-brokered talks&lt;/a&gt; aimed at ending the conflict.&lt;/p&gt;&lt;p&gt;The next round is expected to take place on February 1, according to Zelenskyy.&lt;/p&gt;&lt;p&gt;Ukraine is asking partners, particularly the US, for strong security guarantees in the event of a peace deal that would prevent Russia from attacking again.&lt;/p&gt;&lt;p&gt;A source familiar with internal discussions told the Reuters news agency on Tuesday that Washington has told Ukraine it must sign a peace deal with Russia to get US security guarantees.&lt;/p&gt;&lt;/div&gt;&lt;/main&gt;</content:encoded>
     </item>
     <item>
-      <category/>
-      <title>United States hit by unprecedented snowstorm</title>
-      <link>https://www.france24.com/en/united-states-hit-by-unprecedented-snowstorm</link>
-      <description>
-A severe winter storm has left at least 23 people dead and caused widespread power outages and travel paralysis across the US A dangerous Arctic air mass is bringing life-threatening cold, with temperatures expected to remain below freezing in much of the northern half of the country through February 1.
-</description>
-      <media:thumbnail url="https://s.france24.com/media/display/3f51408e-fb85-11f0-ba0e-005056bf30b7/w:1024/p:16x9/EN-20260127-141138-141325-CS.jpg"/>
-      <enclosure url="https://s.france24.com/media/display/3f51408e-fb85-11f0-ba0e-005056bf30b7/w:1024/p:16x9/EN-20260127-141138-141325-CS.jpg" type="image/jpeg" length="0"/>
-      <guid isPermaLink="false">458422b4-fb85-11f0-aef9-c1487dcdbcd0</guid>
-      <pubDate>Tue, 27 Jan 2026 14:35:51 GMT</pubDate>
-      <dc:creator>FRANCE24</dc:creator>
+      <link>https://www.aljazeera.com/video/newsfeed/2026/1/28/passengers-killed-in-drone-attack-on-ukraine-train?traffic_source=rss</link>
+      <title>Passengers killed in drone attack on Ukraine train</title>
+      <description>A Russian drone strike on a passenger train in Ukraine’s northeastern Kharkiv region has killed at least five people.</description>
+      <pubDate>Wed, 28 Jan 2026 09:56:51 +0000</pubDate>
+      <category>Show Types</category>
+      <guid isPermaLink="false">https://www.aljazeera.com/?t=1769592417</guid>
+      <post-id xmlns="com-wordpress:feed-additions:1">4270605</post-id>
     </item>
     <item>
-      <category/>
-      <title>DRC: Goma marks one year under rebel control as daily life resumes</title>
-      <link>https://www.france24.com/en/drc-goma-marks-one-year-under-rebel-control-as-daily-life-resumes</link>
-      <description>
-It has been one year since the AFC/M23 rebels seized control of Goma, which was then the provincial capital of North Kivu. This marks the first time the city has remained under rebel rule for such an extended period. While daily life has resumed, some residents report a growing climate of repression. Report.
-</description>
-      <media:thumbnail url="https://s.france24.com/media/display/561a6fe4-fb89-11f0-af38-005056bf30b7/w:1024/p:16x9/EN-20260126-214603-214834-CS.jpg"/>
-      <enclosure url="https://s.france24.com/media/display/561a6fe4-fb89-11f0-af38-005056bf30b7/w:1024/p:16x9/EN-20260126-214603-214834-CS.jpg" type="image/jpeg" length="0"/>
-      <guid isPermaLink="false">5b525d14-fb89-11f0-9461-c1487dcdbcd0</guid>
-      <pubDate>Tue, 27 Jan 2026 14:34:01 GMT</pubDate>
-      <dc:creator>FRANCE24</dc:creator>
+      <link>https://www.aljazeera.com/gallery/2026/1/28/tens-of-thousands-flee-northwest-pakistan-over-fears-of-military-operation?traffic_source=rss</link>
+      <title>Tens of thousands flee northwest Pakistan’s Tirah over fears</title>
+      <description>Defence minister denies plans to attack the Pakistan Taliban in Tirah as tens of thousands flee the border region.</description>
+      <pubDate>Wed, 28 Jan 2026 09:38:30 +0000</pubDate>
+      <category>News</category>
+      <guid isPermaLink="false">https://www.aljazeera.com/?t=1769578994</guid>
+      <post-id xmlns="com-wordpress:feed-additions:1">4270605</post-id>
+      <content:encoded>&lt;main class="container__inner" id="main-content-area" tabindex="-1" aria-label="Main content area" morss_own_score="5.893401015228426" morss_score="13.16304281218073"&gt;&lt;p&gt;In Pictures&lt;/p&gt;&lt;a href="https://www.aljazeera.com/gallery/"&gt;Gallery&lt;/a&gt;&lt;h1&gt;Tens of thousands flee northwest Pakistan’s Tirah over fears&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Defence minister denies plans to attack the Pakistan Taliban in Tirah as tens of thousands flee the border region.&lt;/em&gt;&lt;/p&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518904662-1769585901.jpg?resize=770%2C513&amp;amp;quality=80"&gt;&lt;figcaption&gt;People who fled Tirah, a town in Khyber Pakhtunkhwa province, amid fears of an imminent military operation against the Pakistan Taliban, wait their turn outside a registration centre in Bara, in northwestern Pakistan's Khyber district [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;div&gt;&lt;span&gt;By &lt;/span&gt;AP&lt;/div&gt;&lt;span&gt;Published On 28 Jan 2026&lt;/span&gt;&lt;span&gt;28 Jan 2026&lt;/span&gt;&lt;p&gt;Save&lt;/p&gt;&lt;div class="wysiwyg wysiwyg--all-content gallery-content" aria-live="polite" aria-atomic="true" morss_own_score="6.0" morss_score="48.0"&gt;&lt;p&gt;More than 70,000 people, mostly women and children, have fled from Tirah, a remote region in northwestern Pakistan bordering Afghanistan, as fears grow of an imminent military offensive against the Pakistan Taliban, according to local residents and officials.&lt;/p&gt;&lt;p&gt;Pakistan’s Defence Minister Khawaja Muhammad Asif has contradicted claims made by locals and provincial authorities, insisting no military operation is occurring or planned in the Khyber Pakhtunkhwa province town.&lt;/p&gt;&lt;p&gt;During an Islamabad news conference, he attributed the mass migration to harsh weather conditions rather than military actions, despite residents fleeing for weeks over fears of an impending army operation.&lt;/p&gt;&lt;p&gt;The exodus began after mosque announcements in December last year urged residents to vacate Tirah by January 23 to avoid possible conflict. This follows Pakistan’s August military campaign against Taliban forces in the northwestern Bajaur district, which displaced hundreds of thousands.&lt;/p&gt;&lt;p&gt;Shafi Jan, a provincial government spokesman, blamed federal authorities via social media for the displaced people’s hardships, accusing the Islamabad government of changing its position regarding military operations.&lt;/p&gt;&lt;p&gt;Meanwhile, Khyber Pakhtunkhwa Chief Minister Sohail Afridi, from imprisoned former Prime Minister Imran Khan’s party, has opposed military intervention and pledged to prevent a full-scale operation in Tirah.&lt;/p&gt;&lt;p&gt;Military officials maintain they will continue targeted intelligence operations against Tehrik-e-Taliban Pakistan (TTP). They claim many TTP fighters have found refuge in Afghanistan since the Afghan Taliban’s 2021 return to power, with hundreds crossing into Tirah and using residents as human shields during raids.&lt;/p&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;h2&gt;Nearly half of population&lt;/h2&gt;&lt;p&gt;Local government administrator Talha Rafiq Alam reported that approximately 10,000 families – about 70,000 people – from Tirah’s 150,000 population have registered as displaced. The registration deadline has been extended from January 23 to February 5, with assurances that residents can return once security improves.&lt;/p&gt;&lt;p&gt;Zar Badshah, 35, who fled with his family, said mortar explosions in villages recently killed one woman and injured four children in his community. “Community elders told us to leave. They instructed us to evacuate to safer places,” he said.&lt;/p&gt;&lt;p&gt;At a Bara government school, hundreds waited in registration lines for government assistance, many complaining about slow processing. Narendra Singh, 27, explained that members of the Sikh minority also fled Tirah due to food shortages worsened by heavy snowfall and security concerns.&lt;/p&gt;&lt;p&gt;Tirah gained national attention last September after an explosion at an alleged bomb-making facility killed at least 24 people. While authorities claimed most casualties were TTP-linked fighters, local leaders contested this account, stating civilians, including women and children, were among the dead.&lt;/p&gt;&lt;/div&gt;&lt;div class="l-col l-col--text-center l-col--10--centered gallery-images" morss_own_score="6.0" morss_score="34.0"&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027519071850-1769586058.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;Vehicles laden with possessions of families who evacuated from Tirah, a town in the Khyber Pakhtunkhwa province. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027519044453-1769585994.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;Government workers get information from people who fled from Tirah. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518659491-1769585847.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;People wait for their turn outside a registration centre in Bara, a town of Pakistan's northwestern Khyber district. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027519038014-1769585970.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;People who fled from Tirah travel towards a registration centre in Bara. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518955379-1769585953.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;A government worker gets a thumb impression of a person in Bara, a town of Pakistan's northwestern Khyber district. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027519048830-1769586024.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;People from a Sikh community wait for their turn outside a registration centre in Bara. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;span&gt; Advertisement &lt;/span&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518832714-1769585888.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;People who fled from Tirah amid uncertainty over a military operation against the Pakistan Taliban stand beside vehicles loaded with belongings, as they travel to a registration centre in Bara. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518944479-1769585924.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;Government workers get information from people at a registration centre in Bara. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;figure&gt;&lt;img src="https://www.aljazeera.com/wp-content/uploads/2026/01/AP26027518830568-1769585869.jpg?fit=1170%2C780&amp;amp;quality=80"&gt;&lt;figcaption&gt;Vehicles loaded with belongings of families who fled from Tirah, a town in the Khyber Pakhtunkhwa province, amid uncertainty over a military operation against the Pakistan Taliban, travel to a registration centre in Bara, a town of Pakistan's northwestern Khyber district. [Muhammad Sajjad/AP Photo]&lt;/figcaption&gt;&lt;/figure&gt;&lt;hr&gt;&lt;/div&gt;&lt;/main&gt;</content:encoded>
     </item>
   </channel>
 </rss>

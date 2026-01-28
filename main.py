@@ -1,11 +1,9 @@
 import logging
 import time
-import nltk
 from data.fetcher import fetch_new_articles
 from processing.preprocessor import (
     preprocess_for_lda,
     preprocess_for_textrank,
-    preprocess_text,
 )
 from processing.statistical import analyze_lda, summarize_text
 import pandas as pd
@@ -15,7 +13,7 @@ import pandas as pd
 from visualization.summary_vis import visualize_lda
 from config.settings import Settings
 
-# logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -25,13 +23,13 @@ def main():
         "display.max_rows", None
     )  # Show all/more rows for debugging/logging df in console
     pd.set_option("display.max_columns", None)
-    logger.info("Starting rsser...")
+    print("Starting rsser...\n-----", end="\r")
     while True:
         try:
-            logger.info("Trying to find articles")
+            logger.info("Trying to find articles\n-----")
             df = fetch_new_articles()
             if not df.empty:
-                logger.info(f"Fetched {len(df)} new articles.")
+                print(f"\rFetched {len(df['title'])} new articles.\n-----")
                 df["text"] = df["content"].apply(
                     lambda x: x[0]["value"]
                     if isinstance(x, list) and len(x) > 0 and "value" in x[0]
@@ -54,9 +52,9 @@ def main():
                 if texts:
                     ### Statistical summary via TextRank ###
                     for text in texts:
-                        sentences = preprocess_for_textrank(text)
+                        title, sentences = preprocess_for_textrank(text)
                         if sentences:
-                            summaries[summarize_text(sentences)] = 1
+                            summaries[summarize_text(title, sentences)] = 1
                         ### TODO: Meta-summary ?
 
                         for idx, row in df.iterrows():
@@ -75,8 +73,8 @@ def main():
         logger.info("Summaries:")
         output = "\r"
         for summary in summaries:
-            output += f"{summary}\n----------\n"
-        print(output)
+            output += f"{summary[0]}:\n{summary[1]}\n----------\n"
+        print(f"{output}", end="\r")
         time.sleep(60)
 
 

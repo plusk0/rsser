@@ -2,9 +2,6 @@ import pandas as pd
 from sqlalchemy import create_engine
 from config.settings import Settings
 import logging
-
-# import json
-import random
 import feedparser
 import morss
 
@@ -15,10 +12,10 @@ analyzed_articles = (
 
 ### Dev mode feeds ###
 feed_urls = [
-    "https://feeds.bbci.co.uk/news/rss.xml",
-    "https://abcnews.go.com/abcnews/internationalheadlines",
+    # "https://feeds.bbci.co.uk/news/rss.xml",
+    # "https://abcnews.go.com/abcnews/internationalheadlines",  # doesnt seem to work with morss
     "aljazeera.com/xml/rss/all.xml",
-    "france24.com/en/rss",
+    # "france24.com/en/rss",
 ]
 
 
@@ -35,18 +32,18 @@ def fetch_new_articles():
 # TODO: Filter interesting articles by summary/tags, then fetch full text via morss
 def _combine_multiple_rss_feeds(feed_urls):
     dfs = []
-    logger.info(f"No of urls:{len(feed_urls)}")
+    print(f"No of urls:{len(feed_urls)}")
     for url in feed_urls:
         try:
             options = morss.Options(
-                format="rss",
                 indent=True,
-                CACHE="diskcache",
-                MAX_ITEM=-1,
-                LIM_ITEM=-1,
-                DEBUG=1,
-                MAX_TIME=10,
-                LIM_TIME=-1,
+                FORCE=True,  # Disable caching and force refetch
+                MAX_ITEM=100,  # Increase the number of articles fetched
+                RESOLVE=True,  # Replace tracking links with direct links
+                CLIP=True,  # Ensure full-text extraction
+                # MODE="html",  # Use HTML parsing mode
+                FIRSTLINK=True,  # Pull the first article link
+                DEBUG=1,  # Enable debugging
             )
             url, rss = morss.FeedFetch(url, options)  # this only grabs the RSS feed
             rss = morss.FeedGather(
